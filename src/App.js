@@ -5,7 +5,7 @@ import Form from "./pages/Form";
 
 function App() {
   return (
-    <div className="App bg-gray-400 min-h-screen">
+    <div className="App bg-gray-100 min-h-screen">
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/form" element={<Form />} />
