@@ -1,13 +1,15 @@
-import './App.css';
+import "./App.css";
+import { Routes, Route, Link } from "react-router-dom";
+import Home from "./pages/Home";
+import Form from "./pages/Form";
 
 function App() {
   return (
-    <div className="App">
-      <div className="container mx-auto w-4/5">
-        <h2 className='text-2xl text-center my-10 font-bold'>
-          Hello This is a rect app to test any new technonogies
-        </h2>
-      </div>
+    <div className="App bg-gray-400 min-h-screen">
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/form" element={<Form />} />
+      </Routes>
     </div>
   );
 }
